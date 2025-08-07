@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="POST">
+        <fieldset>
+            <legend>Crie sua conta</legend>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Jacinto Pinto">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jacpin@gmail.com">
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password">
+
+            <span><strong>Sexo:</strong></span>
+            <label><input type="radio" name="sexo" value="Macho">Masculino</label>
+            <label><input type="radio" name="sexo" value="Fêmea">Feminino</label>
+            
+            <label for="bio">Biografia:</label>
+            <textarea name="bio" id="bio" rows="5" cols="50" placeholder="Conte um pouco sobre você..."></textarea>
+
+            <label for="consent">
+                <input type="checkbox" name="consent" id="consent">
+                Eu concordo com os termos e condições
+            </label>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
