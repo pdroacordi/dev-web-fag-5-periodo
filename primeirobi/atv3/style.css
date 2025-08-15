@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: rgb(248, 248, 248);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: lightblue;
+    padding: 0.5em 2em;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.navbar h1 {
+    color: blueviolet;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main {
+    margin: 1em 0em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+article {
+    background-color: white;
+    padding: 1em;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 0;
+    max-width: 40%;
+}
+
+article figure {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+article figure img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25), 0 1.5px 6px rgba(0,0,0,0.15);
+}
+
+aside { 
+    background-color: white;
+    border-radius: 16px;
+    padding: 1.5em;
+    min-width: 120px;
+}
+
+p time { 
+    color: lightgray;
+}
+
+figcaption {
+    font-size: 0.6em;
+    color: gray;
+}
+
+footer {
+    background-color: lightblue;
+    padding: 0.2em;
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;  
+    align-items: center;      
+  }
+
+  article, aside {
+    max-width: 800px;         
+    width: 90%;
+  }
+
+  article {
+    margin-right: 0;          
+  }
+}
