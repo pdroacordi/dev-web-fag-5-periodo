@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    background-color: rgb(230, 230, 230);
+}
+
+.navbar{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(39, 39, 39);
+}
+
+.navbar h1 {
+    font-size: 20px;
+    color: orange;
+}
+
+.navbar ul {
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    list-style: none;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main article {
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 16px;
+    padding: 1em;
+}
+
+article header {
+    margin-bottom: 1em;
+}
+
+article time {
+    color: gray;
+}
+
+article figure {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+
+figure figcaption {
+    font-size: 14px;
+    color: gray;
+}
+
+main aside {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+main aside ol {
+    list-style: none;
+}
+
+footer {
+    color: gray;
+    background-color: black;
+    padding: 0.5em;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar ul li:hover {
+        cursor: pointer;
+        color: orange;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main article {
+        width: 50%;
+    }
+
+    main aside {
+        width: 30%;
+        height: fit-content;
+    }
+}
+
+
