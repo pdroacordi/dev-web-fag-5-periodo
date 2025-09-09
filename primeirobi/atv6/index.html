@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>To Do do Sandrolax 🔥</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">ToDo</h2>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="form-title" class="form-section">
+            <form action="" method="post">
+                <h2 id="form-title">Adicione uma tarefa</h2>
+
+                <label for="inTask">Tarefa</label>
+                <input type="text" name="inTaskDescription" id="inTaskDescription" placeholder="Digite sua tarefa..." required>
+
+                <button type="submit" id="btnAdd">Adicionar</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="tasks-title" class="task-board">
+            <h2 id="tasks-title">Tarefas</h2>
+            <ul class="task-list"></ul>
+        </section>
+    </main>
+</body>
+</html>
