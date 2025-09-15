@@ -1,0 +1,27 @@
+:root {
+  /* design tokens */
+  --bg: #f7f8fb;
+  --card: #ffffff;
+  --text: #13141a;
+  --muted: #515869;
+  --accent: #6ee7ff;
+  --accent-2: #b693ff;
+  --ring: #e6e8ef;
+  --shadow: 0 8px 24px rgba(6, 20, 43, .08);
+  --radius: 16px;
+  --maxw: 1080px;
+
+  --space-1: .375rem;
+  --space-2: .75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  --leading: 1.6;
+
+  --font-size-sm: .9375rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: clamp(1.25rem, 1.1rem + .6vw, 1.75rem);
+}

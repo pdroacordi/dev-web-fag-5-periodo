@@ -1,0 +1,16 @@
+.main {
+    margin: 0 auto;
+    max-width: var(--maxw);
+    padding: var(--space-5) var(--space-3);
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* telas grandes: feed + aside lado a lado */
+@media (min-width: 980px) {
+    .main {
+        grid-template-columns: 1.6fr .8fr;
+        align-items: start;
+    }
+}

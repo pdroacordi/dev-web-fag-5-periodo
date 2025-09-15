@@ -1,0 +1,18 @@
+.footer {
+    margin-top: var(--space-6);
+    border-top: 1px solid var(--ring);
+    backdrop-filter: saturate(140%) blur(8px);
+    background: color-mix(in oklab, var(--bg) 70%, transparent);
+}
+
+.nav {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-3);
+    display: grid;
+    gap: var(--space-2);
+}
+
+.copy {
+    color: var(--muted);
+}
