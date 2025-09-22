@@ -1,0 +1,51 @@
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--background-light);
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 1;
+    font-size: var(--font-size-base);
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+}
+
+.text:hover {
+    color: var(--primary-dark);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.25rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.deleteButton:hover {
+    opacity: 1;
+    color: var(--danger-color);
+}

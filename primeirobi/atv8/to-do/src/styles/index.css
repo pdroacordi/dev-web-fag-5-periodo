@@ -1,0 +1,59 @@
+@import './tokens.css';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-light);
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
